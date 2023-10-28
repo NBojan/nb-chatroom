@@ -88,9 +88,15 @@ h1,h2,h3,h4,h5 { font-family: var(--font-quicksand); }
 	background-color: var(--clr-primary-4);
 	border-color: var(--clr-primary-4);
 }
-
-
-
+.Toastify__toast { 
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--clr-primary-4) !important;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.Toastify__progress-bar { background-color: var(--clr-primary-4) !important; }
+.Toastify__toast-icon svg {	fill: var(--clr-primary-4) !important; }
 /*defaults*/
 * {
 	padding: 0;

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import { toast } from "react-toastify";
 import { useGlobalContext } from "@/app/context";
 
 const Nickname = () => {
@@ -11,6 +12,7 @@ const Nickname = () => {
         if(!nickname.trim()) return;
         setUser(nickname.trim());
         setNickname("");
+        toast.success("User updated");
     }
 
     return (

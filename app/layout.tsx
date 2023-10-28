@@ -1,6 +1,8 @@
 import './globals.css'
+import 'react-toastify/dist/ReactToastify.css';
 import type { Metadata } from 'next'
 import { AppProvider } from "./context";
+import { ToastContainer } from 'react-toastify';
 import { myMetadata } from './utils/helpingHand';
 import { Cabin, Quicksand } from 'next/font/google'
 
@@ -27,6 +29,7 @@ export default function RootLayout({
       <body>
         <AppProvider>
           {children}
+          <ToastContainer position="top-center" autoClose={1000} />
         </AppProvider>
       </body>
     </html>
